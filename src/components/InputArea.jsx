@@ -13,6 +13,7 @@ function InputArea(props) {
       <input onChange={handleChange} type="text" value={inputText} />
       <button
         onClick={() => {
+          //executes on click without the arrow fn it would execute on render
           props.onAddItem(inputText);
           setInputText("");
         }}

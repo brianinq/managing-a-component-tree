@@ -4,6 +4,7 @@ function ToDoItem(props) {
   return (
     <div
       onClick={() => {
+        //executes on click without the arrow fn it would execute on render
         props.onChecked(props.id);
       }}
     >
